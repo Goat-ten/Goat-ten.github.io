@@ -1,0 +1,149 @@
+.footer__info {
+  background-color: #232323;
+  margin-top: 90px;
+  padding: 93px 0px 84px 0px;
+}
+.recom__cotainer{
+  max-width: 1391px;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item {
+  flex: 1 1 25%;
+}
+.footer__title {
+  color: #777777;
+  font-size: 24px;
+  font-family:  "MyriadPro-LightSemiExt",sans-serif;
+  margin-bottom: 33px;
+}
+.footer__list {
+  li a{
+    color: #ffffff;
+    font-family:  "MyriadPro-LightSemiExt",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 24px;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
+.footer__item:last-child{
+  display: none;
+}
+.plus{
+  display: none;
+  color: #fff;
+  font-style: inherit;
+  font-family:  "MyriadPro-LightSemiExt",sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+@media screen and (max-width:937px){
+  .plus{
+    display: block;
+  }
+  .footer__list{
+    display: none;
+    text-align: center;
+    li a{
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+  .footer__list-active{
+    display: block;
+  }
+  .footer__item:last-child{
+    display: block;
+  }
+  .footer__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 34px 0px;
+    margin: 20px 25px;
+    border-bottom: 1px solid #f3f2f231;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+  .footer__item:last-child{
+    .footer__title{
+      border-bottom: none;
+    }
+  }
+  .footer__flex{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #1f1f1f;
+  padding: 46px 0px 26px 0px;
+}
+.container {
+}
+.recom__container {
+}
+.footer__flex {
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.logo__logo {
+  margin-right: 17px;
+}
+.logo__names {
+  p{
+    color: #ffffff;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  span{
+    color: #787878;
+    font-family:  "MyriadPro-LightSemiExt",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.25px;
+    display: inline-block;
+  }
+
+}
+.footer__nti {
+  color: #ffffff;
+  font-family:  "MyriadPro-LightSemiExt",sans-serif;
+
+font-size: 18px;
+font-weight: 400;
+}
+
+@media screen and (max-width:937px){
+  .footer__nti{
+    margin-top: 25px;
+  }
+  .footer{
+    padding-left:52px;
+  }
+}
+@media screen and (max-width:498px){
+  .footer{
+    padding-left:12px;
+  }
+}

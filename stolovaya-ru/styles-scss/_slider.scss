@@ -1,0 +1,223 @@
+.image-slider {
+  min-width: 0;
+  max-width: 902px;
+  width: 100%;
+  flex: 0 1 auto;
+
+}
+.main {
+  margin-top: 21px;
+}
+.container {
+}
+.main__head {
+  display: flex;
+  margin-bottom: 20px;
+}
+.head__menu {
+   flex: 0 1 300px;
+   min-width: 269px;
+   background-color: #fff;
+   padding: 23px 0px 0 0;
+   margin-right: 21px;
+   li{
+     &:first-child{
+       margin-left:26px ;
+       margin-bottom: 10px;
+     }
+     display: flex;
+     align-items: center;
+
+     span{
+      margin-right: 21px;
+    }
+   }
+}
+.head__menu--title {
+  color: #ffaf2d;
+  font-family: "Myriad Pro",sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.head__menu--link {
+  color: #303030;
+  font-family: "MyriadPro-LightSemiExt",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #bababa44;
+  display: inline-block;
+  width: 100%;
+  padding: 14.8px 0px;
+  padding-left: 27px;
+
+  &:hover{
+    color: #ffaf2d;
+  }
+
+}
+.arrow-right {
+}
+.banner__body {
+  padding: 215px 0px 0px 28px;
+}
+.banner__untitle {
+  color: #121212;
+  font-family: "MyriadPro-LightSemiExt",sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 18px;
+  margin-bottom: 9px;
+}
+.banner__title {
+  font-family: "Myriad Pro",sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: -3px;
+  margin-bottom: 25px;
+}
+.banner__link{
+  color: #ffaf2d;
+  font-family: "MyriadPro-LightSemiExt",sans-serif;
+  font-weight: 300;
+}
+.banner{
+  flex: 1 0 300px;
+  border-radius: 2px;
+  border: 2px solid #ffaf2d;
+  background-color: #ffffff;
+  margin-left: 21px;
+  cursor: pointer;
+}
+@media screen and (max-width:1569px){
+  .head__menu{
+    display: none;
+  }
+  .main{
+    margin-top: 0px;
+  }
+  .main__head{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .image-slider__image {
+    max-width: 100% !important;
+    width: 100% ;
+    flex: 1 1 100% !important;
+    height: 556px;
+  }
+  .image-slider{
+    margin: 0;
+    width: 100%;
+    max-width: 100% !important;
+  }
+  .main .container{
+    padding: 0;
+  }
+  .banner{
+    margin: 0px 15px 0px 15px;
+  }
+  .banner__body{
+    padding-top: 5%;
+    padding-bottom: 68px;
+  }
+
+}
+.ibg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  max-width: 100%;
+  object-fit: cover;
+}
+.image-slider__image {
+  position: relative;
+  z-index: 20;
+  max-width: 902px;
+  min-height: 476px;
+span{
+  color: #777777;
+  font-family: "MyriadPro-LightSemiExt",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 59px;
+  display: inline-block;
+  padding-left:7%;
+}
+.slider__title{
+  color: #f3f1f1;
+  font-family: "Myriad Pro",sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  padding-left: 7%;
+  padding-top: 73px;
+}
+.slider__subtitle{
+  font-family: "MyriadPro-LightSemiExt",sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #ffffffa2;
+  padding-left: 7%;
+  padding-top: 28px;
+}
+.more{
+  border-radius: 28px;
+  background-color: #ffaf2d;
+  border: none;
+  outline: none;
+  padding: 9px 15px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  margin-left: 7%;
+  margin-top: 60px;
+}
+
+}
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+  color: rgb(143, 143, 143);
+  font-size: 20px;
+  position: absolute;
+  bottom: -249px;
+}
+@media screen and (min-width:925px){
+  .image-slider .swiper-button-prev::after,
+  .image-slider .swiper-button-next::after{
+  display: none;
+  }
+}
+@media screen and (max-width:899px){
+  .ibg{
+    object-position: 70%;
+  }
+}
+@media screen and (max-width:899px){
+ .image-slider__image .slider__title{
+    font-size: 30px;
+    padding-top: 39px;
+  }
+  .image-slider__image {
+    height: 106px !important;
+  }
+  .slider__title{
+    font-size: 26px !important;
+  }
+  .swiper-slide{
+    height: 380px;
+  }
+  
+}
+.swiper-button-prev::after{
+left:350%;
+}
+.image-slider .swiper-button-next::after{
+right: 350%;
+}
+
+.image-slider .swiper-pagination-bullet{
+ background-color: rgb(151, 151, 151);
+}

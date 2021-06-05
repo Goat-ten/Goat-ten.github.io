@@ -1,0 +1,236 @@
+.recom__items {
+}
+.recom__cotainer{
+  max-width: 1391px;
+}
+.recom__body {
+  display: flex;
+}
+.recom__item {
+}
+.recom__item-vert {
+  flex: 0 1 594px;
+  margin-right: 13px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 69px 0px 0px 0px;
+
+  .recom__image {
+    .mob-recom{
+      display: none;
+    }
+  }
+}
+.recom__flex {
+}
+.recom__brand {
+  color: #121212;
+  font-family: 'MyriadPro-LightSemiExt',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.recom__type {
+  color: #121212;
+  font-family: "Myriad Pro",sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.recom__text {
+  color: #777777;
+  font-family: "Myriad Pro - Light Semi Ext",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 284px;
+  margin: 25px auto 41px auto;
+}
+
+.recom__col{
+  flex:1 1 784px;
+}
+.recom__col>.recom__item-horiz:first-child .recom__flex{
+  order: 2;
+  padding-top: 121px;
+  padding-left: 57px;
+}
+
+
+
+
+
+
+.recom__item-horiz {
+  display: flex;
+  background-color: #232323;
+
+  .recom__brand{
+    color: #ffffff;
+    margin-bottom: 13px;
+  }
+  .recom__type{
+    color: #ffffff;
+    max-width: 192px;
+  }
+  .recom__text{
+    max-width: 100%;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 399px;
+    span{
+      color: inherit;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+  }
+}
+
+.recom__col .recom__item-horiz:last-child{
+  margin-top: 10px;
+  background-color: #fff;
+  display: flex;
+  .recom__flex{
+    flex: 1 0 auto;
+    padding-left: 63px;
+    padding-top: 96px;
+  }
+  .recom__brand{
+    color: #121212;
+  }
+  .recom__type{
+    color: #121212;
+  }
+  .recom__text{
+    color:#777;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .recom__image{
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width:1381px){
+  .recom__brand{
+    font-size: 30px;
+  }
+  .recom__type{
+    font-size: 40px;
+  }
+  .recom__items .recom__text{
+    font-size: 25px;
+    font-family: "Myriad Pro - Light Semi Ext",sans-serif;
+
+  }
+  .recom__item-vert{
+    display: flex;
+    flex: 1 0 100%;
+
+    .recom__flex{
+      text-align: left;
+      flex: 1 1 40%;
+      padding-left: 68px;
+    }
+    
+    .recom__text{
+      margin-left: 0;
+      max-width: 90%;
+    }
+    .recom__image{
+      flex:0 1 auto;
+      .decs-recom{
+        display: none;
+      }
+      .mob-recom{
+        display: block;
+      }
+    }
+  }
+  .recom__body:not(:nth-child(2)){
+    flex-direction: column;
+  }
+  .recom__item-vert{
+    margin-right: 0;
+  }
+  .recom__item-horiz{
+    flex:1 0 auto;
+
+    .recom__text span{
+      white-space: normal;
+    }
+    .recom__text{
+      max-width: 90%;
+      margin-left: 0;
+    }
+
+  }
+  .recom__col .recom__item-horiz:last-child{
+    .recom__flex{
+      flex:1 1 40%;
+    }
+  }
+}
+
+
+@media screen and (max-width:680px) {
+  .recom__items .recom__body .recom__image{
+    img{
+      display: none;
+    }
+  }
+  .recom__flex{
+    height: 400px;
+  }
+  .recom__item-vert{
+    padding-top: 140px;
+  }
+  .recom__col .recom__item-horiz:last-child{
+    .recom__flex{
+      padding-top: 150px;
+    }
+  }
+}
+
+@media screen and (max-width:543px){
+
+  .recom__item-vert {
+    padding-top: 20px;
+  }
+  .recom__col > .recom__item-horiz:first-child .recom__flex{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .recom__col > .recom__item-horiz:nth-child(2) .recom__flex{
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .recom__flex{
+    height: 250px;
+    padding-top: 40px;
+  }
+  .recom__brand {
+    font-size: 20px;
+  }
+  .recom__type {
+    font-size: 30px;
+  }
+  .recom__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:494px) {
+  .recom__flex{
+    height: auto;
+  }
+  .recom__item-vert .recom__flex{
+    padding-left: 20px;
+  }
+  .recom__col > .recom__item-horiz:first-child .recom__flex{
+    padding-left: 20px;
+  }
+  .recom__col .recom__item-horiz:last-child .recom__flex {
+    padding-left: 20px;
+  }
+}

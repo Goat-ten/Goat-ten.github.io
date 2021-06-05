@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Myriad pro";
+
+    src: url("font_MyriadPro/MyriadProRegular/MyriadProRegular.eot?iefix") format("eot"),
+        url("font_MyriadPro/MyriadProRegular/MyriadProRegular.otf") format("otf"),
+        url("font_MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype"),
+        url("font_MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff");
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face{
+    font-family: 'HelveticaNeueCyr';
+
+    src: url("Helvetica/HelveticaNeueCyr-Light.eot?iefix")format("eot"),
+    url("Helvetica/HelveticaNeueCyr-Light.ttf") format("truetype"),
+    url("Helvetica/HelveticaNeueCyr-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'MyriadPro-LightSemiExt';
+
+    src: url("myriadpro-lightsemiext.ttf")format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    
+}
+

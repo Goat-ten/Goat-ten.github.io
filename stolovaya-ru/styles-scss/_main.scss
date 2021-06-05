@@ -1,0 +1,51 @@
+.brandss {
+}
+.brandss__container {
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 101px;
+  align-items: center;
+  padding-left:56px ;
+  padding-right: 80px;
+}
+.brand__item {
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-right: 1px solid #e8e7e7;
+&:last-child{
+  border: none;
+}
+}
+@media screen and (max-width:1267px){
+  .brandss__container{
+    padding: 15px;
+    height: 100%;
+  }
+  .brand__item{
+    padding-right: 0;
+    border-right: none;
+  }
+  .banner__body {
+    padding: 89px 0px 30px 28px;
+  }
+  
+  
+}
+@media screen and (max-width:933px){
+  .brandss__container{
+    text-align: center;
+  }
+  .brand__item{
+    flex:1 0 50%;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width:933px){
+  .brand__item{
+    flex:  1 1 100%;
+    padding-bottom: 36px;
+  }
+}
